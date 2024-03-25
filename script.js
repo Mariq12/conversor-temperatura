@@ -1,21 +1,3 @@
-/*var nombreUsuario = "Flor María";
-var temperaturaCelsius = 29;
-var temperaturaFahrenheit = (temperaturaCelsius * 9) / 5 + 32;
-var temperaturaKelvin = temperaturaCelsius + 273;
-
-alert(
-  "Hola " +
-    nombreUsuario +
-    "! " +
-    temperaturaCelsius +
-    " grados Celsius corresponden a " +
-    temperaturaFahrenheit +
-    " grados Fahrenheit y " +
-    temperaturaKelvin +
-    " Kelvin."
-);*/
-
-// script.js
 // Función para convertir temperatura
 function convertirTemperatura() {
   var nombreUsuario = document.getElementById("nombreUsuario").value;
@@ -29,6 +11,3 @@ function convertirTemperatura() {
   var resultados = document.getElementById("resultados");
   resultados.innerHTML = 'Hola ' + nombreUsuario + '! ' + 'la temperatura de ' + celsius + ' grados Celsius corresponden a ' + fahrenheit.toFixed(2) + ' grados Fahrenheit y ' + kelvin.toFixed(2) + ' Kelvin.';
 }
-
-
-

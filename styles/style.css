@@ -1,93 +1,89 @@
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Arial", monospace;
   text-align: center;
-  background-image: url("https://img.freepik.com/fotos-gratis/fechar-o-termometro-mostrando-alta-temperatura_23-2149456779.jpg?w=1380&t=st=1692985786~exp=1692986386~hmac=02d8a11d78ffd5345c2028d944c174c706ed3560205637528fa4dbfe191a9808");
+  background-image: url("https://img.freepik.com/foto-gratis/primer-plano-termometro-que-muestra-temperatura-alta_23-2149456738.jpg");
   background-color: #000000;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 130vh;
+  margin: 0; /* Eliminar margen predeterminado del cuerpo */
 }
 
 .container {
   text-align: center;
-  padding: 20px;
+  padding: 35px;
 }
 
 .page-title {
-  color: #ffffff;
-  margin: 0 0 5px;
-}
-
-.page-subtitle {
-  color: #ffffff;
-  margin-top: 5px;
+  color: pink;
+  margin: 0 0 20px;
 }
 
 .page-logo {
-  width: 200px;
+  width: 270px;
 }
 
 .alura-logo {
-  width: 40px;
+  width: 45px;
   position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-body > img {
-  margin: 0 10px;
+  top: 15px;
+  right: 15px;
 }
 
 img {
   max-height: 250px;
 }
-.converter {
-  margin-top: 20px;
-  color: #ffffff;
-  font-weight: bold;
-}
 
+/* Estilos para los campos de entrada */
+input[type="text"],
 input[type="number"] {
-  margin-top: 10px;
-  padding: 8px;
-  font-size: 16px;
+  border: none; /* Borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  height: 30px;
 }
 
-button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+/* Estilos para el botón */
+.convert-button {
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Sin borde */
+  color: white; /* Color de texto */
+  padding: 10px 20px; /* Espacio interno */
+  text-align: center; /* Alineación de texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cursor al pasar */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Transición suave de color de fondo */
+}
+
+.convert-button:hover {
+  background-color: #45a049; /* Color de fondo al pasar */
 }
 
 #resultados {
   background-color: white;  
   color: green;
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
   font-weight: bold;
+  border-radius: 5px; /* Bordes redondeados */
 }
 
 footer {
-    text-align: center;
-    font-family: sans-serif;
-    width: 100%;
-    bottom: 0;
-    position:fixed;
+  text-align: center;
+  font-family: sans-serif;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
 }
 
 footer p {
-    margin: 0;
-    padding: 20px 0 20px 0;
-    background-color: black;
-    color: #fff;
-    height: 30px;
-    margin-top: 20px;
+  margin: 0;
+  padding: 20px 0;
+  background-color: black;
+  color: #fff;
+  height: 30px;
 }
