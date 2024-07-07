@@ -10,4 +10,5 @@ function convertirTemperatura() {
 
   var resultados = document.getElementById("resultados");
   resultados.innerHTML = 'Hola ' + nombreUsuario + '! ' + 'la temperatura de ' + celsius + ' grados Celsius corresponden a ' + fahrenheit.toFixed(2) + ' grados Fahrenheit y ' + kelvin.toFixed(2) + ' Kelvin.';
+  resultados.style.visibility = 'visible'; // Mostrar resultados
 }

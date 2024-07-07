@@ -6,8 +6,15 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 130vh;
-  margin: 0; /* Eliminar margen predeterminado del cuerpo */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-general {
+  width: 30rem;
+  margin-bottom: 3rem;
+
 }
 
 .container {
@@ -35,32 +42,57 @@ img {
   max-height: 250px;
 }
 
+.info {
+  flex-direction: column;
+  display: flex;
+}
+.container-info {
+  flex-direction: column;
+  display: flex;
+}
+.container-info label {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
 /* Estilos para los campos de entrada */
 input[type="text"],
 input[type="number"] {
-  border: none; /* Borde */
-  border-radius: 5px; /* Bordes redondeados */
-  font-size: 16px; /* Tamaño de fuente */
+  border: none; 
+  border-radius: 5px; 
+  font-size: 16px; 
   height: 30px;
+  margin-bottom: 0.5rem;
+  padding: 5px 15px;
+  resize: none;
+  overflow: hidden;
 }
 
 /* Estilos para el botón */
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
 .convert-button {
-  background-color: #4CAF50; /* Color de fondo */
-  border: none; /* Sin borde */
-  color: white; /* Color de texto */
-  padding: 10px 20px; /* Espacio interno */
-  text-align: center; /* Alineación de texto */
-  text-decoration: none; /* Sin subrayado */
-  display: inline-block; /* Mostrar como bloque en línea */
-  font-size: 16px; /* Tamaño de fuente */
-  cursor: pointer; /* Cursor al pasar */
-  border-radius: 5px; /* Bordes redondeados */
-  transition: background-color 0.3s; /* Transición suave de color de fondo */
+  width: 50%;
+  margin-top: 1rem;
+  background-color: #4CAF50; 
+  border: none; 
+  color: white; 
+  padding: 10px 20px; 
+  text-align: center; 
+  text-decoration: none; 
+  font-size: 16px; 
+  cursor: pointer; 
+  border-radius: 5px;
+  transition: background-color 0.3s; 
 }
 
 .convert-button:hover {
-  background-color: #45a049; /* Color de fondo al pasar */
+  background-color: #45a049; 
 }
 
 #resultados {
@@ -69,7 +101,9 @@ input[type="number"] {
   font-size: 20px;
   margin-top: 30px;
   font-weight: bold;
-  border-radius: 5px; /* Bordes redondeados */
+  border-radius: 5px;
+  visibility: hidden; /* Oculto por defecto */
+  margin-bottom: 3rem;
 }
 
 footer {
