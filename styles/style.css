@@ -1,7 +1,7 @@
 body {
   font-family: "Arial", monospace;
   text-align: center;
-  background: linear-gradient( 180deg, #0c0074, #aca2fe); 
+  background: linear-gradient( 180deg, #0a0159, #442fea); 
   margin: 0;
   display: flex;
   justify-content: center;
@@ -9,14 +9,13 @@ body {
 }
 .container-general {
   margin: 1rem;
-  margin-bottom: 5rem;
   padding: 1rem;
   width: 30rem;
 }
 
 .container {
   text-align: center;
-  padding: 35px;
+  padding: 1.5rem;
 }
 
 .page-title {
@@ -29,14 +28,10 @@ body {
 }
 
 .alura-logo {
-  width: 45px;
+  width: 3rem;
   position: absolute;
   top: 15px;
-  right: 15px;
-}
-
-img {
-  max-height: 250px;
+  left: 1.5rem;
 }
 
 .info {
@@ -58,17 +53,30 @@ img {
 /* Estilos para los campos de entrada */
 input[type="text"],
 input[type="number"] {
-  border: none; 
+  border: 2px solid #ccc; /* Color del borde del campo de entrada */
   border-radius: 5px; 
   font-size: 16px; 
   height: 30px;
-  margin-bottom: 0.5rem;
-  padding: 5px 15px;
+  padding: 1.25rem;
   resize: none;
   overflow: hidden;
   outline: none;
   margin-bottom: 1.25rem;
+  box-sizing: border-box;
+  cursor: pointer;
 }
+
+input[type="text"]:hover,
+input[type="number"]:hover {
+  border: 2px solid #4CAF50; /* Color del borde al pasar el cursor */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border: 2px solid #45a049; /* Color del borde al hacer clic */
+  outline: none; /* Eliminar el borde del navegador por defecto */
+}
+
 
 /* Estilos para el botón */
 .button-container {
@@ -78,7 +86,7 @@ input[type="number"] {
 
 .convert-button {
   width: 50%;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   background-color: #4CAF50; 
   border: none; 
   color: white; 
@@ -96,13 +104,14 @@ input[type="number"] {
 }
 
 #resultados {
+  border: 2px solid green;
   background-color: white;  
   color: green;
-  font-size: 20px;
-  margin-top: 30px;
+  font-size: 1rem;
+  margin-top: 1rem;
   font-weight: bold;
-  border-radius: 5px;
-  visibility: hidden; /* Oculto por defecto */
+  border-radius: 8px;
+  visibility: hidden; 
   margin-bottom: 3rem;
 }
 
@@ -115,6 +124,8 @@ footer {
 }
 
 footer p {
+  font-size: 14px;
+  line-height: 1.25rem;
   margin: 0;
   padding: 20px 0;
   background-color: black;
